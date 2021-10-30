@@ -6,8 +6,15 @@ namespace Open_Lab_04._03
     {
         public string RemoveFirstLast(string original)
         {
-            original = original[1..^1];
-            return "original";
+            if (original.Length <= 1)
+            {
+                return original;
+            }
+            else
+            {
+                return original.Substring(1, original.Length - 2);
+
+            }
         }
     }
 }
