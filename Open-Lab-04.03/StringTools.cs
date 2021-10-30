@@ -6,7 +6,8 @@ namespace Open_Lab_04._03
     {
         public string RemoveFirstLast(string original)
         {
-            throw new NotImplementedException();
+            original = original[1..^1];
+            return "original";
         }
     }
 }
